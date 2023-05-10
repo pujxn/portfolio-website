@@ -25,21 +25,46 @@ const Home = () => {
     }
 
     return (
-        <motion.div variants={containerVariant} initial="hidden" animate="visible" className="w-4/5 ml-32">
-            <div>
-                <p className="text-light-orange text-2xl">{splitToSpan({ str: "Hi, my name is" })}</p>
-                <p className="text-white font-bold text-5xl">{splitToSpan({ str: "Pujan Parikh." })}</p>
-                <p className="text-light-gray font-bold text-4xl">{splitToSpan({ str: "I craft experiences for the web." })}</p>
-            </div>
-            <div className="text-2xl w-3/5">
-                <p className="text-light-gray">{splitToSpan({ str: "I'm a " })}{splitToSpan({ str: "software developer", className: "text-light-orange" })}{splitToSpan({ str: " with a passion for human-centered design." })}</p>
-                <p className="text-light-gray">{splitToSpan({ str: "At the moment, I'm " })}{splitToSpan({ str: "looking for opportunites", className: "text-light-orange" })}{splitToSpan({ str: " with motivated teams to build delightful and performant experiences for the user." })}</p>
-            </div>
-            <div className="w-full">
-                <motion.button variants={buttonVariant} className="shadow-xl p-3 mt-16 text-2xl border-2 border-light-orange text-light-orange">Get in touch!</motion.button>
+        <div className="flex justify-around">
+            <motion.div variants={containerVariant} initial="hidden" animate="visible"
+                className="mt-16 w-3/6 mb-4">
+                <div>
+                    <p className="text-light-orange text-2xl">{splitToSpan({ str: "Hi, my name is" })}</p>
+                    <p className="text-white font-bold text-5xl">{splitToSpan({ str: "Pujan Parikh." })}</p>
+                    <p className="text-light-gray font-bold text-4xl">{splitToSpan({ str: "I craft experiences for the web." })}</p>
+                </div>
+                <div className="text-2xl w-5/6">
+                    <p className="text-light-gray">{splitToSpan({ str: "I'm a " })}{splitToSpan({ str: "software developer", className: "text-light-orange" })}{splitToSpan({ str: " with a passion for human-centered design." })}</p>
+                    <p className="text-light-gray">{splitToSpan({ str: "At the moment, I'm " })}{splitToSpan({ str: "looking for opportunites", className: "text-light-orange" })}{splitToSpan({ str: " with motivated teams to build delightful and performant experiences for the user." })}</p>
+                </div>
+                <div className="mt-16">
+                    <motion.button variants={buttonVariant} className="shadow-xl p-3 text-2xl border-2 border-light-orange text-light-orange">Get in touch!</motion.button>
+                </div>
+            </motion.div>
+            {/* <div className="mt-16 mx-16 flex relative border-4 border-green-600">
+                <div className="h-full w-full absolute top-0 left-0 z-20 bg-light-orange/20 hover:bg-white/0"></div>
+                <motion.img
+                    whileHover={{ scale: 0.5 }}
+                    src="../public/pujanparikh.jpg"
+                    alt="Pujan Parikh"
+                    className="z-10" />
+                <div className="h-full w-full absolute top-4 left-4 z-0 border-2 border-light-orange hover:-translate-x-2"></div>
+            </div> */}
 
+            {/* <img
+                src="../public/pujanparikh.jpg"
+                alt="Pujan Parikh"
+                className="z-10" /> */}
+
+            <div className="mt-16 w-3/12 mb-4 hover:-translate-x-2 relative" >
+                <div className="h-full w-full absolute top-0 left-0 z-30  bg-light-orange/20 hover:bg-white/0"></div>
+                <img src="../public/pujanparikh.jpg" alt="Pujan Parikh"
+                    className="h-full w-full z-10 absolute"
+                />
+                <div className="h-full w-full absolute top-4 left-4 border-2 border-light-orange "></div>
             </div>
-        </motion.div >
+
+        </div >
     )
 }
 
