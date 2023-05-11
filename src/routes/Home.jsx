@@ -1,5 +1,6 @@
 import { v4 as uuidv4 } from "uuid";
 import { motion } from "framer-motion";
+import ProfileImage from "@/routes/home/ProfileImage";
 
 const Home = () => {
 
@@ -41,30 +42,19 @@ const Home = () => {
                     <motion.button variants={buttonVariant} className="shadow-xl p-3 text-2xl border-2 border-light-orange text-light-orange">Get in touch!</motion.button>
                 </div>
             </motion.div>
-            {/* <div className="mt-16 mx-16 flex relative border-4 border-green-600">
-                <div className="h-full w-full absolute top-0 left-0 z-20 bg-light-orange/20 hover:bg-white/0"></div>
-                <motion.img
-                    whileHover={{ scale: 0.5 }}
-                    src="../public/pujanparikh.jpg"
-                    alt="Pujan Parikh"
-                    className="z-10" />
-                <div className="h-full w-full absolute top-4 left-4 z-0 border-2 border-light-orange hover:-translate-x-2"></div>
-            </div> */}
 
-            {/* <img
-                src="../public/pujanparikh.jpg"
-                alt="Pujan Parikh"
-                className="z-10" /> */}
-
-            <div className="mt-16 w-3/12 mb-4 hover:-translate-x-2 relative" >
+            {/* <div className="mt-16 w-3/12 mb-4 hover:-translate-x-2 relative z-10" >
                 <div className="h-full w-full absolute top-0 left-0 z-30  bg-light-orange/20 hover:bg-white/0"></div>
                 <img src="../public/pujanparikh.jpg" alt="Pujan Parikh"
                     className="h-full w-full z-10 absolute"
                 />
                 <div className="h-full w-full absolute top-4 left-4 border-2 border-light-orange "></div>
+                <div className="z-0 debug bg-red-600"></div>
             </div>
+        </div> */}
 
-        </div >
+            <ProfileImage />
+        </div>
     )
 }
 
