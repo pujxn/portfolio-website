@@ -15,11 +15,6 @@ const Home = () => {
         visible: { opacity: 1, transition: { staggerChildren: 0.03 } },
     }
 
-    const buttonVariant = {
-        hidden: { opacity: 0, y: 50 },
-        visible: { opacity: 1, y: 0, transition: { ease: "easeIn", duration: 1 } },
-    }
-
     const splitToSpan = ({ str, ...args }) => {
         return str.split("").map((ele) => {
             return <motion.span key={uuidv4()} variants={itemVariant} {...args}>{ele}</motion.span>
@@ -29,7 +24,7 @@ const Home = () => {
     return (
         <div className="flex justify-around">
             <motion.div variants={containerVariant} initial="hidden" animate="visible"
-                className="mt-16 w-3/6 mb-4">
+                className="ml-36 mt-16 w-3/6 mb-4">
                 <div>
                     <p className="text-light-orange text-2xl">{splitToSpan({ str: "Hi, my name is" })}</p>
                     <p className="text-white font-bold text-5xl">{splitToSpan({ str: "Pujan Parikh." })}</p>
@@ -39,7 +34,7 @@ const Home = () => {
                     <p className="text-light-gray">{splitToSpan({ str: "I'm a " })}{splitToSpan({ str: "software developer", className: "text-light-orange" })}{splitToSpan({ str: " with a passion for human-centered design." })}</p>
                     <p className="text-light-gray">{splitToSpan({ str: "At the moment, I'm " })}{splitToSpan({ str: "looking for opportunites", className: "text-light-orange" })}{splitToSpan({ str: " with motivated teams to build delightful and performant experiences for the user." })}</p>
                 </div>
-                <GetInTouch buttonVariant={buttonVariant} />
+                <GetInTouch />
 
             </motion.div>
 

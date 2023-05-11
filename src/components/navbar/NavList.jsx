@@ -12,7 +12,7 @@ const NavList = () => {
         <ul className="text-white">
             {
                 listItems.map((ele, idx) => {
-                    return <li className="inline-block" key={idx}><NavListItem itemText={ele} />{idx != (listItems.length - 1) && "|"}</li>
+                    return <li className="inline-block" key={idx}><NavListItem itemText={ele} />{idx != (listItems.length - 1) && <span className="cursor-default">|</span>}</li>
                 })
             }
 

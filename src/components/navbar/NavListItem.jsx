@@ -5,9 +5,9 @@ const NavListItem = ({ itemText }) => {
     const [isHovered, setIsHovered] = useState(false);
 
     return (
-        <span onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}
-            className={isHovered && "text-light-orange"}
-        >{itemText}</ span>
+        <a href="" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}
+            className={isHovered ? "text-light-orange" : undefined}
+        >{itemText}</ a>
     )
 }
 
