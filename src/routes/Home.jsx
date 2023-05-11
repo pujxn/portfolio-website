@@ -1,6 +1,7 @@
 import { v4 as uuidv4 } from "uuid";
 import { motion } from "framer-motion";
 import ProfileImage from "@/routes/home/ProfileImage";
+import GetInTouch from "@/routes/home/GetInTouch";
 
 const Home = () => {
 
@@ -10,13 +11,13 @@ const Home = () => {
     }
 
     const containerVariant = {
-        hidden: { opacity: 0 },
-        visible: { opacity: 1, transition: { staggerChildren: 0.03 } }
+        hidden: { opacity: 1 },
+        visible: { opacity: 1, transition: { staggerChildren: 0.03 } },
     }
 
     const buttonVariant = {
         hidden: { opacity: 0, y: 50 },
-        visible: { opacity: 1, y: 0, transition: { ease: "easeIn", duration: 1 } }
+        visible: { opacity: 1, y: 0, transition: { ease: "easeIn", duration: 1 } },
     }
 
     const splitToSpan = ({ str, ...args }) => {
@@ -38,9 +39,8 @@ const Home = () => {
                     <p className="text-light-gray">{splitToSpan({ str: "I'm a " })}{splitToSpan({ str: "software developer", className: "text-light-orange" })}{splitToSpan({ str: " with a passion for human-centered design." })}</p>
                     <p className="text-light-gray">{splitToSpan({ str: "At the moment, I'm " })}{splitToSpan({ str: "looking for opportunites", className: "text-light-orange" })}{splitToSpan({ str: " with motivated teams to build delightful and performant experiences for the user." })}</p>
                 </div>
-                <div className="mt-16">
-                    <motion.button variants={buttonVariant} className="shadow-xl p-3 text-2xl border-2 border-light-orange text-light-orange">Get in touch!</motion.button>
-                </div>
+                <GetInTouch buttonVariant={buttonVariant} />
+
             </motion.div>
 
             {/* <div className="mt-16 w-3/12 mb-4 hover:-translate-x-2 relative z-10" >
