@@ -43,7 +43,9 @@ const Home = () => {
             </div>
 
             <div className="sm:hidden">
-                <ProfileImage />
+                <div className="flex justify-center">
+                    <ProfileImage />
+                </div>
                 <div className="flex flex-col items-center">
                     <motion.div variants={containerVariant} initial="hidden" animate="visible"
                         className="ml-36 mt-24 w-3/6 mb-4">
