@@ -17,7 +17,7 @@ const ProfileImage = () => {
     }
 
     return (
-        <div className="mt-16 w-3/12 mb-4 relative h-3/12 debug">
+        <div className="mt-16 mb-4 w-full h-full relative h-3/12">
             <div
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
