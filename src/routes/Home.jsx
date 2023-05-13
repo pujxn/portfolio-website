@@ -24,7 +24,7 @@ const Home = () => {
     return (
         <div className="flex justify-around">
             <motion.div variants={containerVariant} initial="hidden" animate="visible"
-                className="ml-36 mt-16 w-3/6 mb-4">
+                className="ml-36 mt-24 w-3/6 mb-4">
                 <div>
                     <p className="text-light-orange text-2xl">{splitToSpan({ str: "Hi, my name is" })}</p>
                     <p className="text-white font-bold text-5xl">{splitToSpan({ str: "Pujan Parikh." })}</p>
