@@ -24,7 +24,7 @@ const Home = () => {
     return (
         <>
             <div className="max-sm:hidden">
-                <div className="flex min-[640px]:justify-around max-[640px]:flex-col max-[640px]:items-center">
+                <div className="flex min-[640px]:justify-around max-[640px]:flex-col max-[640px]:items-center debug">
                     <motion.div variants={containerVariant} initial="hidden" animate="visible"
                         className="ml-36 mt-24 w-3/6 mb-4">
                         <div>
@@ -43,10 +43,10 @@ const Home = () => {
             </div>
 
             <div className="sm:hidden">
-                <div className="flex justify-center">
-                    <ProfileImage />
-                </div>
                 <div className="flex flex-col items-center">
+                    <div className="flex justify-center">
+                        <ProfileImage />
+                    </div>
                     <motion.div variants={containerVariant} initial="hidden" animate="visible"
                         className="ml-36 mt-24 w-3/6 mb-4">
                         <div>
