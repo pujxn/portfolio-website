@@ -45,7 +45,7 @@ const Home = () => {
             </div>
 
             <div className="sm:hidden">
-                <div className="flex flex-col items-center debug">
+                <div className="flex flex-col items-center">
                     <div className="flex justify-center w-3/6">
                         <ProfileImage />
                     </div>
