@@ -22,12 +22,12 @@ const Home = () => {
     }
 
     return (
-        <>
-            <div className="max-sm:hidden">
-                <div className="flex min-[640px]:justify-around max-[640px]:flex-col max-[640px]:items-center debug">
+        <div className="h-4/5">
+            <div className="max-sm:hidden h-full">
+                <div className="flex justify-around items-center h-full">
                     <motion.div variants={containerVariant} initial="hidden" animate="visible"
-                        className="ml-36 mt-24 w-3/6 mb-4">
-                        <div>
+                        className="ml-36 w-3/6 mb-4 h-full flex flex-col justify-center">
+                        <div className="">
                             <p className="text-light-orange text-2xl">{splitToSpan({ str: "Hi, my name is" })}</p>
                             <p className="text-white font-bold text-5xl">{splitToSpan({ str: "Pujan Parikh." })}</p>
                             <p className="text-light-gray font-bold text-4xl">{splitToSpan({ str: "I craft experiences for the web." })}</p>
@@ -38,13 +38,15 @@ const Home = () => {
                         </div>
                         <GetInTouch />
                     </motion.div>
-                    <ProfileImage />
+                    <div className="h-full flex items-center relative">
+                        <ProfileImage />
+                    </div>
                 </div>
             </div>
 
             <div className="sm:hidden">
                 <div className="flex flex-col items-center">
-                    <div className="flex justify-center border-4 w-3/6 border-green-600">
+                    <div className="flex justify-center w-3/6">
                         <ProfileImage />
                     </div>
                     <motion.div variants={containerVariant} initial="hidden" animate="visible"
@@ -63,7 +65,7 @@ const Home = () => {
                 </div>
             </div>
 
-        </>
+        </div>
 
     )
 }
