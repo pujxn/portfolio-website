@@ -22,7 +22,7 @@ const Home = () => {
     }
 
     return (
-        <div className="h-4/5">
+        <div className="h-5/6">
             <div className="max-sm:hidden h-full">
                 <div className="flex justify-around items-center h-full">
                     <motion.div variants={containerVariant} initial="hidden" animate="visible"
@@ -45,7 +45,7 @@ const Home = () => {
             </div>
 
             <div className="sm:hidden">
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center debug">
                     <div className="flex justify-center w-3/6">
                         <ProfileImage />
                     </div>

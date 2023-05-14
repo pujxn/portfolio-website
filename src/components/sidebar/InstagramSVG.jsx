@@ -1,9 +1,7 @@
 const InstagramSVG = () => {
     return (
         <svg
-            className="fill-light-gray hover:fill-light-orange"
-            width="40px"
-            height="40px"
+            className="fill-light-gray hover:fill-light-orange w-16 h-16"
             viewBox="0 0 20 20"
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"

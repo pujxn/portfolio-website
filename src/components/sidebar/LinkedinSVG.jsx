@@ -1,10 +1,7 @@
 const LinkedinSVG = () => {
     return (
         <svg
-            className="fill-light-gray hover:fill-light-orange"
-            // fill="#FF0000"
-            width="40px"
-            height="40px"
+            className="fill-light-gray hover:fill-light-orange h-16 w-16"
             viewBox="0 0 1920 1920"
             xmlns="http://www.w3.org/2000/svg"
         >

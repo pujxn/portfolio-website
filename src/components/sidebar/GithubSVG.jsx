@@ -1,9 +1,7 @@
 const GithubSVG = () => {
     return (
         <svg
-            className="stroke-light-gray hover:stroke-light-orange"
-            width="40px"
-            height="40px"
+            className="stroke-light-gray hover:stroke-light-orange w-16 h-16"
             viewBox="0 0 192 192"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
