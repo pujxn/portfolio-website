@@ -46,7 +46,7 @@ const Home = () => {
 
             <div className="sm:hidden h-full">
                 <div className="flex flex-col items-center justify-around h-full">
-                    <div className="flex justify-center w-3/6 h-1/4">
+                    <div className="flex justify-center w-2/5 h-1/4 ">
                         <ProfileImage />
                     </div>
                     <motion.div variants={containerVariant} initial="hidden" animate="visible"
