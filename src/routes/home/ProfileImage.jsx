@@ -17,9 +17,8 @@ const ProfileImage = () => {
     }
 
     return (
-        <div className="w-full">
-
-            <div className="max-sm:hidden">
+        <div className="w-full h-full">
+            <div className="max-sm:hidden flex items-center h-9/10 mt-4">
                 <div className="h-5/6 relative">
                     <div
                         onMouseEnter={handleMouseEnter}
