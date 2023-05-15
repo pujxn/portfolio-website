@@ -22,7 +22,7 @@ const Home = () => {
     }
 
     return (
-        <div className="h-5/6">
+        <div className="h-5/6 border-2 border-green-600">
             <div className="max-sm:hidden h-full">
                 <div className="flex justify-around items-center h-full">
                     <motion.div variants={containerVariant} initial="hidden" animate="visible"
@@ -44,21 +44,23 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="sm:hidden">
-                <div className="flex flex-col items-center">
-                    <div className="flex justify-center w-3/6">
+            <div className="sm:hidden h-full border-2 border-white">
+                <div className="flex flex-col items-center h-full border-2 border-black">
+                    <div className="flex justify-center w-3/6  h-1/3 border-2 border-blue-600">
                         <ProfileImage />
                     </div>
                     <motion.div variants={containerVariant} initial="hidden" animate="visible"
-                        className="ml-36 mt-24 w-3/6 mb-4">
-                        <div>
-                            <p className="text-light-orange text-2xl">{splitToSpan({ str: "Hi, my name is" })}</p>
-                            <p className="text-white font-bold text-5xl">{splitToSpan({ str: "Pujan Parikh." })}</p>
-                            <p className="text-light-gray font-bold text-4xl">{splitToSpan({ str: "I craft experiences for the web." })}</p>
-                        </div>
-                        <div className="text-2xl w-5/6">
-                            <p className="text-light-gray">{splitToSpan({ str: "I'm a " })}{splitToSpan({ str: "software developer", className: "text-light-orange" })}{splitToSpan({ str: " with a passion for human-centered design." })}</p>
-                            <p className="text-light-gray">{splitToSpan({ str: "At the moment, I'm " })}{splitToSpan({ str: "looking for opportunites", className: "text-light-orange" })}{splitToSpan({ str: " with motivated teams to build delightful and performant experiences for the user." })}</p>
+                        className="ml-36 mb-4 debug h-2/3">
+                        <div className="h-4/5 debug">
+                            <div>
+                                <p className="text-light-orange text-2xl">{splitToSpan({ str: "Hi, my name is" })}</p>
+                                <p className="text-white font-bold text-5xl">{splitToSpan({ str: "Pujan Parikh." })}</p>
+                                <p className="text-light-gray font-bold text-4xl">{splitToSpan({ str: "I craft experiences for the web." })}</p>
+                            </div>
+                            <div className="text-2xl w-5/6">
+                                <p className="text-light-gray">{splitToSpan({ str: "I'm a " })}{splitToSpan({ str: "software developer", className: "text-light-orange" })}{splitToSpan({ str: " with a passion for human-centered design." })}</p>
+                                <p className="text-light-gray">{splitToSpan({ str: "At the moment, I'm " })}{splitToSpan({ str: "looking for opportunites", className: "text-light-orange" })}{splitToSpan({ str: " with motivated teams to build delightful and performant experiences for the user." })}</p>
+                            </div>
                         </div>
                         <GetInTouch />
                     </motion.div>
