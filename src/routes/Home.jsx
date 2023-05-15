@@ -22,7 +22,7 @@ const Home = () => {
     }
 
     return (
-        <div className="h-5/6 border-2 border-green-600">
+        <div className="h-9/10">
             <div className="max-sm:hidden h-full">
                 <div className="flex justify-around items-center h-full">
                     <motion.div variants={containerVariant} initial="hidden" animate="visible"
@@ -44,14 +44,14 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="sm:hidden h-full border-2 border-white">
-                <div className="flex flex-col items-center h-full border-2 border-black">
-                    <div className="flex justify-center w-3/6  h-1/3 border-2 border-blue-600">
+            <div className="sm:hidden h-full">
+                <div className="flex flex-col items-center justify-around h-full">
+                    <div className="flex justify-center w-3/6 h-1/4">
                         <ProfileImage />
                     </div>
                     <motion.div variants={containerVariant} initial="hidden" animate="visible"
-                        className="ml-36 mb-4 debug h-2/3">
-                        <div className="h-4/5 debug">
+                        className="ml-36 mb-4 h-fit -mt-16">
+                        <div>
                             <div>
                                 <p className="text-light-orange text-2xl">{splitToSpan({ str: "Hi, my name is" })}</p>
                                 <p className="text-white font-bold text-5xl">{splitToSpan({ str: "Pujan Parikh." })}</p>

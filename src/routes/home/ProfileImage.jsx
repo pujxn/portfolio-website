@@ -17,7 +17,7 @@ const ProfileImage = () => {
     }
 
     return (
-        <div className="border-4 border-white">
+        <div className="">
 
             <div className="max-sm:hidden">
                 <div className="h-5/6 relative">
@@ -34,8 +34,8 @@ const ProfileImage = () => {
                 </div>
             </div>
 
-            <div className="sm:hidden flex items-center justify-center border-4 border-green-400 h-full">
-                <div className="h-full debug relative">
+            <div className="sm:hidden flex items-center justify-center h-full">
+                <div className="h-full relative">
                     <div
                         onMouseEnter={handleMouseEnter}
                         onMouseLeave={handleMouseLeave}

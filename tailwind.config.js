@@ -13,6 +13,10 @@ export default {
       },
       fontFamily: {
         "courier-prime": ['Courier Prime', "monospace"]
+      },
+      height: {
+        "1/10": "10%",
+        "9/10": "90%"
       }
     },
   },
