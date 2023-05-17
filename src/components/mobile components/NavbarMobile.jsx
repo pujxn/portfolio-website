@@ -1,6 +1,6 @@
 const NavbarMobile = () => {
     return (
-        <div className="h-1/10 debug">
+        <div className="h-1/10 ">
 
         </div>
     )
