@@ -1,4 +1,4 @@
-import HamburgerButton from "@/components/mobile components/Navbar Components/HamburgerButton";
+import HamburgerMenu from "@/components/mobile components/Navbar Components/HamburgerMenu";
 
 const NavbarMobile = () => {
     return (
@@ -7,7 +7,7 @@ const NavbarMobile = () => {
                 <p>Pujan Parikh</p>
             </div>
             <div>
-                <HamburgerButton />
+                <HamburgerMenu />
             </div>
 
         </div>

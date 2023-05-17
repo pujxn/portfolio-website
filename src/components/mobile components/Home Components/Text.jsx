@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-import { v4 as uuidv4 } from "uuid";
-
+import objectHash from "object-hash";
 const Text = () => {
 
 
@@ -11,8 +10,8 @@ const Text = () => {
 
 
     const splitToSpan = ({ str, ...args }) => {
-        return str.split("").map((ele) => {
-            return <motion.span key={uuidv4()} variants={itemVariant} {...args}>{ele}</motion.span>
+        return str.split("").map((ele, idx) => {
+            return <motion.span key={objectHash([ele, idx])} variants={itemVariant} {...args}>{ele}</motion.span>
         })
     }
 
