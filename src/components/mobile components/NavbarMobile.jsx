@@ -2,7 +2,7 @@ import HamburgerMenu from "@/components/mobile components/Navbar Components/Hamb
 
 const NavbarMobile = () => {
     return (
-        <div className="h-1/10 debug flex justify-between items-center px-4 text-sm">
+        <div className="h-1/10 flex justify-between items-center px-4 text-sm relative">
             <div>
                 <p>Pujan Parikh</p>
             </div>
