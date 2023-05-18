@@ -12,30 +12,30 @@ const HomeMobile = () => {
     }
 
     return (
-        // <div className="h-9/10 grid grid-rows-3 px-4">
-        <div className="h-9/10 px-4">
-
-            {/* <div className="row-start-1"> */}
-            <div className="h-1/3">
-                <ProfileImage />
+        <>
+            <div className=" sm:hidden h-9/10 px-4">
+                <div className="h-1/3">
+                    <ProfileImage />
+                </div>
+                <motion.div className="h-2/3" variants={containerVariant} initial="hidden" animate="visible">
+                    <div className="h-1/2">
+                        <Text />
+                    </div>
+                    <div className="h-1/2 flex flex-col justify-center">
+                        <div className="h-4/5 relative">
+                            <div>
+                                <Links />
+                            </div>
+                            <div className="h-fit absolute inset-y-1/4 inset-x-1/4">
+                                <Button />
+                            </div>
+                        </div>
+                    </div>
+                </motion.div>
             </div>
-            {/* <motion.div className="row-start-2 row-span-2 grid grid-rows-2" variants={containerVariant} initial="hidden" animate="visible"> */}
-            <motion.div className="h-2/3" variants={containerVariant} initial="hidden" animate="visible">
-                {/* <div className="row-start-1 row-span-1 "> */}
-                <div className="h-1/2">
-                    <Text />
-                </div>
-                {/* <div className="row-start-2 row-span-1"> */}
-                <div className="h-1/2 flex flex-wrap justify-center">
-                    <div className="self-start pt-6">
-                        <Links />
-                    </div>
-                    <div>
-                        <Button />
-                    </div>
-                </div>
-            </motion.div>
-        </div>
+
+        </>
+
     )
 }
 
