@@ -9,7 +9,7 @@ const Links = () => {
     ]
 
     return (
-        <div className="flex flex-row justify-center text-2xl text-white py-2">
+        <div className="flex flex-row justify-center text-2xl text-white">
             {linkItems.map(ele => <a className="px-8" href={ele.link} key={ele.name}>{ele.svgComponent}</a>)}
         </div>
     )
