@@ -27,7 +27,7 @@ const HomeMobile = () => {
                 </div>
                 {/* <div className="row-start-2 row-span-1"> */}
                 <div className="h-1/2 flex flex-wrap justify-center">
-                    <div className="self-start debug pt-8">
+                    <div className="self-start pt-6">
                         <Links />
                     </div>
                     <div>
