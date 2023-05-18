@@ -8,7 +8,7 @@ const Button = () => {
     }
 
     return (
-        <div className="h-full flex justify-center items-center">
+        <div className="flex justify-center">
             <motion.button className="p-3 block border-2 border-light-orange text-light-orange text-sm" variants={buttonVariant}>
                 Get in touch!
             </motion.button>

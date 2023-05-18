@@ -1,4 +1,4 @@
-import ProfileImg from "../../../../public/pujanparikh.jpg"
+import ProfileImg from "@/pujanparikh.jpg"
 
 const ProfileImage = () => {
     return (

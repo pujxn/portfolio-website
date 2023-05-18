@@ -2,6 +2,7 @@ import Button from "@/components/mobile components/Home Components/Button";
 import ProfileImage from "@/components/mobile components/Home Components/ProfileImage";
 import Text from "@/components/mobile components/Home Components/Text";
 import { motion } from "framer-motion";
+import Links from "@/components/mobile components/Home Components/Links";
 
 const HomeMobile = () => {
 
@@ -25,8 +26,13 @@ const HomeMobile = () => {
                     <Text />
                 </div>
                 {/* <div className="row-start-2 row-span-1"> */}
-                <div className="h-1/2">
-                    <Button />
+                <div className="h-1/2 flex flex-col justify-around">
+                    <div>
+                        <Links />
+                    </div>
+                    <div>
+                        <Button />
+                    </div>
                 </div>
             </motion.div>
         </div>
