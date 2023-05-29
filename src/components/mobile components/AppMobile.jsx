@@ -4,7 +4,7 @@ import SidebarMobile from "@/components/mobile components/SidebarMobile";
 
 const AppMobile = () => {
     return (
-        <div className="h-screen ">
+        <div className="h-screen sm:hidden">
             <NavbarMobile />
             <HomeMobile />
             <SidebarMobile />

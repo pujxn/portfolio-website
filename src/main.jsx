@@ -6,5 +6,6 @@ import AppMobile from '@/components/mobile components/AppMobile'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <AppMobile />
+    <App />
   </React.StrictMode>,
 )
